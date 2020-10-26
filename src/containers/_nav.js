@@ -4,39 +4,39 @@ export default [
     _children: [
       {
         _name: 'CSidebarNavItem',
-        name: 'Dashboard',
+        name: 'Bem vindo',
         to: '/dashboard',
         icon: 'cil-speedometer',
         badge: {
-          color: 'primary',
-          text: 'NEW'
+          color: 'success',
+          text: 'Online'
         }
       },
       {
         _name: 'CSidebarNavTitle',
-        _children: ['Theme']
+        _children: ['Projeto']
       },
       {
         _name: 'CSidebarNavItem',
-        name: 'Colors',
+        name: 'Administrativo',
         to: '/theme/colors',
-        icon: 'cil-drop'
+        icon: 'cil-people'
       },
       {
         _name: 'CSidebarNavItem',
-        name: 'Typography',
+        name: 'Tarefas',
         to: '/theme/typography',
-        icon: 'cil-pencil'
+        icon: 'cil-task'
       },
       {
         _name: 'CSidebarNavTitle',
-        _children: ['Components']
+        _children: ['Equipes Corporativas']
       },
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Base',
+        name: 'Desenvolvedores Frontend',
         route: '/base',
-        icon: 'cil-puzzle',
+        icon: 'cil-envelopeOpen',
         items: [
           {
             name: 'Breadcrumbs',
@@ -106,9 +106,9 @@ export default [
       },
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Buttons',
+        name: 'Desenvolvedores Backend',
         route: '/buttons',
-        icon: 'cil-cursor',
+        icon: 'cil-envelopeClosed',
         items: [
           {
             name: 'Buttons',
@@ -130,13 +130,13 @@ export default [
       },
       {
         _name: 'CSidebarNavItem',
-        name: 'Charts',
+        name: 'Adm Banco de Dados',
         to: '/charts',
         icon: 'cil-chart-pie'
       },
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Icons',
+        name: 'Recursos Humanos',
         route: '/icons',
         icon: 'cil-star',
         items: [
@@ -160,7 +160,7 @@ export default [
       },
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Notifications',
+        name: 'Tesoureiros',
         route: '/notifications',
         icon: 'cil-bell',
         items: [
@@ -178,17 +178,7 @@ export default [
           }
         ]
       },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Widgets',
-        to: '/widgets',
-        icon: 'cil-calculator',
-        badge: {
-          color: 'primary',
-          text: 'NEW',
-          shape: 'pill'
-        }
-      },
+  
       {
         _name: 'CSidebarNavDivider',
         _class: 'm-2'
@@ -199,7 +189,7 @@ export default [
       },
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Pages',
+        name: 'Páginas',
         route: '/pages',
         icon: 'cil-star',
         items: [
@@ -221,22 +211,6 @@ export default [
           }
         ]
       },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Download CoreUI',
-        href: 'http://coreui.io/vue/',
-        icon: { name: 'cil-cloud-download', class: 'text-white' },
-        _class: 'bg-success text-white',
-        target: '_blank'
-      },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Try CoreUI PRO',
-        href: 'http://coreui.io/pro/vue/',
-        icon: { name: 'cil-layers', class: 'text-white' },
-        _class: 'bg-danger text-white',
-        target: '_blank'
-      }
     ]
   }
 ]

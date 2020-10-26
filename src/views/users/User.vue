@@ -15,7 +15,7 @@
           />
         </CCardBody>
         <CCardFooter>
-          <CButton color="primary" @click="goBack">Back</CButton>
+          <CButton color="primary" @click="goBack">Voltar</CButton>
         </CCardFooter>
       </CCard>
     </CCol>
@@ -46,7 +46,7 @@ export default {
     userData () {
       const id = this.$route.params.id
       const user = usersData.find((user, index) => index + 1 == id)
-      const userDetails = user ? Object.entries(user) : [['id', 'Not found']]
+      const userDetails = user ? Object.entries(user) : [['id', 'Não existe']]
       return userDetails.map(([key, value]) => { return { key, value } })
     },
     visibleData () {

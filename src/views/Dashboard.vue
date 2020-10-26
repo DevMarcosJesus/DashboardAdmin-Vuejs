@@ -5,8 +5,8 @@
       <CCardBody>
         <CRow>
           <CCol sm="5">
-            <h4 id="traffic" class="card-title mb-0">Traffic</h4>
-            <div class="small text-muted">November 2017</div>
+            <h4 id="traffic" class="card-title mb-0">Tráfego</h4>
+            <div class="small text-muted">Outubro {{new Date().getFullYear()}}</div>
           </CCol>
           <CCol sm="7" class="d-none d-md-block">
             <CButton color="primary" class="float-right">
@@ -15,7 +15,7 @@
             <CButtonGroup class="float-right mr-3">
               <CButton
                 color="outline-secondary"
-                v-for="(value, key) in ['Day', 'Month', 'Year']"
+                v-for="(value, key) in ['Dia', 'Mês', 'Ano']"
                 :key="key"
                 class="mx-0"
                 :pressed="value === selected ? true : false"
@@ -31,8 +31,8 @@
       <CCardFooter>
         <CRow class="text-center">
           <CCol md sm="12" class="mb-sm-2 mb-0">
-            <div class="text-muted">Visits</div>
-            <strong>29.703 Users (40%)</strong>
+            <div class="text-muted">Visitas</div>
+            <strong>29.703 Usuários (40%)</strong>
             <CProgress
               class="progress-xs mt-2"
               :precision="1"
@@ -41,8 +41,8 @@
             />
           </CCol>
           <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-            <div class="text-muted">Unique</div>
-            <strong>24.093 Users (20%)</strong>
+            <div class="text-muted">Único</div>
+            <strong>24.093 Usuários (20%)</strong>
             <CProgress
               class="progress-xs mt-2"
               :precision="1"
@@ -51,8 +51,8 @@
             />
           </CCol>
           <CCol md sm="12" class="mb-sm-2 mb-0">
-            <div class="text-muted">Pageviews</div>
-            <strong>78.706 Views (60%)</strong>
+            <div class="text-muted">Visualização</div>
+            <strong>78.706 Visalizações(60%)</strong>
             <CProgress
               class="progress-xs mt-2"
               :precision="1"
@@ -61,8 +61,8 @@
             />
           </CCol>
           <CCol md sm="12" class="mb-sm-2 mb-0">
-            <div class="text-muted">New Users</div>
-            <strong>22.123 Users (80%)</strong>
+            <div class="text-muted">Novos usuários</div>
+            <strong>22.123 Usuários (80%)</strong>
             <CProgress
               class="progress-xs mt-2"
               :precision="1"
@@ -71,8 +71,8 @@
             />
           </CCol>
           <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-            <div class="text-muted">Bounce Rate</div>
-            <strong>Average Rate (40.15%)</strong>
+            <div class="text-muted">Taxa de Rejeição</div>
+            <strong>Taxa Média (40.15%)</strong>
             <CProgress
               class="progress-xs mt-2"
               :precision="1"
@@ -87,7 +87,7 @@
       <CCol md="12">
         <CCard>
           <CCardHeader>
-            Traffic &amp; Sales
+            Tráfego &amp; Vendas
           </CCardHeader>
           <CCardBody>
             <CRow>
@@ -95,13 +95,13 @@
                 <CRow>
                   <CCol sm="6">
                     <CCallout color="info">
-                      <small class="text-muted">New Clients</small><br>
+                      <small class="text-muted">Novos Clientes</small><br>
                       <strong class="h4">9,123</strong>
                     </CCallout>
                   </CCol>
                   <CCol sm="6">
                     <CCallout color="danger">
-                      <small class="text-muted">Recurring Clients</small><br>
+                      <small class="text-muted">Clientes Recorrentes</small><br>
                       <strong class="h4">22,643</strong>
                     </CCallout>
                   </CCol>
@@ -110,7 +110,7 @@
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
                     <span class="progress-group-text">
-                      Monday
+                      Segunda
                     </span>
                   </div>
                   <div class="progress-group-bars">
@@ -129,7 +129,7 @@
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
                     <span class="progress-group-text">
-                      Tuesday
+                      Terça
                     </span>
                   </div>
                   <div class="progress-group-bars">
@@ -148,7 +148,7 @@
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
                     <span class="progress-group-text">
-                      Wednesday
+                      Quarta
                     </span>
                   </div>
                   <div class="progress-group-bars">
@@ -167,7 +167,7 @@
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
                     <span class="progress-group-text">
-                      Thursday
+                      Quinta
                     </span>
                   </div>
                   <div class="progress-group-bars">
@@ -186,7 +186,7 @@
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
                     <span class="progress-group-text">
-                      Friday
+                      Sexta
                     </span>
                   </div>
                   <div class="progress-group-bars">
@@ -205,7 +205,7 @@
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
                     <span class="progress-group-text">
-                      Saturday
+                      Sábado
                     </span>
                   </div>
                   <div class="progress-group-bars">
@@ -224,7 +224,7 @@
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
                     <span class="progress-group-text">
-                      Sunday
+                      Domingo
                     </span>
                   </div>
                   <div class="progress-group-bars">
@@ -241,26 +241,20 @@
                   </div>
                 </div>
                 <div class="legend text-center">
-                  <small>
-                    <sup><CBadge shape="pill" color="info">&nbsp;</CBadge></sup>
-                    New clients
-                    &nbsp;&nbsp;
-                    <sup><CBadge shape="pill" color="danger">&nbsp;</CBadge></sup>
-                    Recurring clients
-                  </small>
+        
                 </div>
               </CCol>
               <CCol sm="12" lg="6">
                 <CRow>
                   <CCol sm="6">
                     <CCallout color="warning">
-                      <small class="text-muted">Pageviews</small><br>
+                      <small class="text-muted">Visualização da Página</small><br>
                       <strong class="h4">78,623</strong>
                     </CCallout>
                   </CCol>
                   <CCol sm="6">
                     <CCallout color="success">
-                      <small class="text-muted">Organic</small><br>
+                      <small class="text-muted">Orgânico</small><br>
                       <strong class="h4">49,123</strong>
                     </CCallout>
                   </CCol>
@@ -270,7 +264,7 @@
                   <div class="progress-group">
                     <div class="progress-group-header">
                       <CIcon name="cil-user" class="progress-group-icon"/>
-                      <span class="title">Male</span>
+                      <span class="title">Masculino</span>
                       <span class="ml-auto font-weight-bold">43%</span>
                     </div>
                     <div class="progress-group-bars">
@@ -284,7 +278,7 @@
                   <div class="progress-group mb-5">
                     <div class="progress-group-header">
                       <CIcon name="cil-user-female" class="progress-group-icon"/>
-                      <span class="title">Female</span>
+                      <span class="title">Feminino</span>
                       <span class="ml-auto font-weight-bold">37%</span>
                     </div>
                     <div class="progress-group-bars">
@@ -298,7 +292,7 @@
                   <div class="progress-group">
                     <div class="progress-group-header">
                       <CIcon name="cil-globe-alt" class="progress-group-icon"/>
-                      <span class="title">Organic Search</span>
+                      <span class="title">Pesquisa Orgânica</span>
                       <span class="ml-auto font-weight-bold">
                         191,235 <span class="text-muted small">(56%)</span>
                       </span>
@@ -442,7 +436,7 @@
                 />
               </td>
               <td slot="activity" slot-scope="{item}">
-                <div class="small text-muted">Last login</div>
+                <div class="small text-muted">Último Login</div>
                 <strong>{{item.activity}}</strong>
               </td>
             </CDataTable>

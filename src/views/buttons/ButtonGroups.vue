@@ -194,5 +194,6 @@
 <script>
 export default {
   name: 'ButtonGroups',
+
 }
 </script>

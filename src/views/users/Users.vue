@@ -3,7 +3,7 @@
     <CCol col="12" xl="8">
       <CCard>
         <CCardHeader>
-          Users
+          Usuários
         </CCardHeader>
         <CCardBody>
           <CDataTable
@@ -40,9 +40,9 @@ export default {
     return {
       items: usersData,
       fields: [
-        { key: 'username', label: 'Name', _classes: 'font-weight-bold' },
-        { key: 'registered' },
-        { key: 'role' },
+        { key: 'username', label: 'Nome', _classes: 'font-weight-bold' },
+        { key: 'registered', label: 'Registrados' },
+        { key: 'role', label: 'Cargos' },
         { key: 'status' }
       ],
       activePage: 1

@@ -6,4 +6,4 @@
 
 <span> Print </span>
 
-<img src="/public/page.png">
+<img src="/public/img/page.png">

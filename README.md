@@ -4,6 +4,6 @@
 
 <h3> Learning VUEJS I have a development project to improve my knowledge in Vuejs </h3>
 
-<span> Print </span>
+<p> Here have Vue Toaster Notification for 10 second. </p>
 
 <img src="/public/img/page.png">
